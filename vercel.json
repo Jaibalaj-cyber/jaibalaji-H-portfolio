@@ -1,15 +1,5 @@
 {
-  "version": 2,
   "cleanUrls": true,
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "handle": "filesystem"
-    }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
