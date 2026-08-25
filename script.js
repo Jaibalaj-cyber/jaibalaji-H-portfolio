@@ -201,8 +201,14 @@ function goToSection(index, event) {
   isAnimating = true;
   updateActiveUI(targetId);
 
-  // Smoothly scroll target element into viewport
-  targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Exact mobile-safe scroll offset for fixed navbar
+  const navHeightOffset = window.innerWidth < 768 ? 60 : 80;
+  const targetTop = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeightOffset;
+
+  window.scrollTo({
+    top: Math.max(0, targetTop),
+    behavior: 'smooth'
+  });
 
   // Update browser history hash without jump
   if (window.history && window.history.replaceState) {
@@ -213,7 +219,7 @@ function goToSection(index, event) {
   setTimeout(() => {
     isAnimating = false;
     evaluateActiveSection();
-  }, 750);
+  }, 500);
 }
 
 function updateActiveUI(sectionId) {
