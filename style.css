@@ -448,6 +448,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: #FFDE00;
 }
 
+/* Portrait Tap-to-Toggle Grayscale / Normal Color Effect */
+#portraitCard {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#portraitImg {
+  transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s ease;
+}
+#portraitCard:hover #portraitImg {
+  filter: grayscale(0%);
+}
+#portraitImg.is-color {
+  filter: grayscale(0%) !important;
+}
+#portraitCard.is-active-color {
+  border-color: rgba(255, 222, 0, 0.5) !important;
+  box-shadow: 0 16px 40px rgba(230, 39, 39, 0.28), 0 0 25px rgba(255, 222, 0, 0.25) !important;
+}
+#portraitCard.is-active-color #artSigningBadge {
+  background-color: #E62727 !important;
+  color: #FFFFFF !important;
+  border-color: #FFDE00 !important;
+  box-shadow: 0 0 15px rgba(230, 39, 39, 0.6) !important;
+}
+
+
 /* ================= ACCESSIBILITY: REDUCED MOTION ================= */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

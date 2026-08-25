@@ -278,10 +278,10 @@
 
                     </div>
 
-                    <!-- Cutout Photo Card -->
-                    <div class="lg:col-span-5 relative w-full h-[240px] sm:h-[300px] lg:h-auto rounded-3xl border-2 border-white/10 overflow-hidden bg-[#121212] group order-2 lg:order-2 shadow-xl flex items-end justify-center">
-                        <img src="assets/about-avatar.png?v=2" alt="Jai Balaji H Portrait" class="w-full h-full object-contain object-bottom filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out select-none pointer-events-auto"/>
-                        <div class="absolute top-4 right-4 sm:top-5 sm:right-5 bg-[#FFDE00] text-[#080808] font-extrabold text-[10px] md:text-xs uppercase px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-[#080808] select-none shadow-md z-10 tracking-wider">ART SIGNING ✦</div>
+                    <!-- Cutout Photo Card (Tap to Toggle B&W / Color) -->
+                    <div id="portraitCard" class="lg:col-span-5 relative w-full h-[240px] sm:h-[300px] lg:h-auto rounded-3xl border-2 border-white/10 overflow-hidden bg-[#121212] group order-2 lg:order-2 shadow-xl flex items-end justify-center cursor-pointer transition-all duration-300 active:scale-[0.98]" onclick="togglePortraitColor(event)" title="Tap to toggle color mode" role="button" aria-label="Toggle photo between black and white and full color">
+                        <img id="portraitImg" src="assets/about-avatar.png?v=2" alt="Jai Balaji H Portrait" class="w-full h-full object-contain object-bottom filter grayscale transition-all duration-500 ease-in-out select-none pointer-events-auto"/>
+                        <div id="artSigningBadge" class="absolute top-4 right-4 sm:top-5 sm:right-5 bg-[#FFDE00] text-[#080808] font-extrabold text-[10px] md:text-xs uppercase px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-[#080808] select-none shadow-md z-10 tracking-wider transition-all duration-300">ART SIGNING ✦</div>
                     </div>
 
                 </div>

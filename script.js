@@ -721,3 +721,28 @@ window.addEventListener('keydown', (e) => {
     closeContactModal();
   }
 });
+
+/* ===================================================
+   6. PORTRAIT TAP-TO-TOGGLE B&W / NORMAL COLOR
+   =================================================== */
+function togglePortraitColor(event) {
+  if (event) {
+    event.stopPropagation();
+  }
+  const img = document.getElementById('portraitImg');
+  const card = document.getElementById('portraitCard');
+  if (!img) return;
+
+  const isNowColor = img.classList.toggle('is-color');
+  if (card) {
+    card.classList.toggle('is-active-color', isNowColor);
+  }
+
+  // Micro vibration haptic on mobile devices
+  if (window.navigator && window.navigator.vibrate) {
+    try {
+      window.navigator.vibrate(25);
+    } catch (_) {}
+  }
+}
+
