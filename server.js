@@ -277,10 +277,13 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// Catch-all route to serve index.html for frontend navigation only
+// Catch-all route to serve index.html for frontend navigation only (not static files)
 app.get('*', (req, res) => {
   if (req.path.startsWith('/api/')) {
     return res.status(404).json({ error: 'Endpoint not found' });
+  }
+  if (path.extname(req.path)) {
+    return res.status(404).send('Asset not found');
   }
   res.sendFile(path.join(__dirname, 'index.html'));
 });
