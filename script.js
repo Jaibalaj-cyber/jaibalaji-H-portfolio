@@ -387,7 +387,7 @@ function initFullpageScroll() {
     }
   });
 
-  // Touch Swipe Handling for Mobile
+  // Touch Handling for Mobile: Smooth, natural touch scrolling
   window.addEventListener('touchstart', (e) => {
     touchStartY = e.touches[0].clientY;
   }, { passive: true });
@@ -397,11 +397,10 @@ function initFullpageScroll() {
     const touchEndY = e.changedTouches[0].clientY;
     const deltaY = touchStartY - touchEndY;
 
-    if (Math.abs(deltaY) > 60) {
+    // On mobile, allow natural scrolling; only jump on desktop or deliberate large swipe (>140px on Home)
+    if (Math.abs(deltaY) > 140 && currentSectionIndex === 0) {
       if (deltaY > 0 && currentSectionIndex < SECTIONS.length - 1) {
         goToSection(currentSectionIndex + 1);
-      } else if (deltaY < 0 && currentSectionIndex > 0) {
-        goToSection(currentSectionIndex - 1);
       }
     }
   }, { passive: true });

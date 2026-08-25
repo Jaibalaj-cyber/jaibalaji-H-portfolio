@@ -460,3 +460,89 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     animation: none !important;
   }
 }
+
+/* ================= TARGETED MOBILE RESPONSIVE ENHANCEMENTS (< 768px) ================= */
+@media (max-width: 767px) {
+  /* Dynamic mobile viewport with proper safe margins */
+  .fullpage-section, section[id] {
+    min-height: 100dvh;
+    height: auto;
+    padding-top: 5.5rem;
+    padding-bottom: 4.5rem;
+    justify-content: flex-start;
+    scroll-margin-top: 65px;
+    overflow-y: visible;
+  }
+
+  /* 1. Hero Section on Mobile */
+  #home.fullpage-section {
+    min-height: 100dvh;
+    height: 100dvh;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  #home .max-w-5xl {
+    transform: translateY(-9vh) !important;
+  }
+
+  #home img[alt*="Avatar"] {
+    height: 38vh !important;
+    max-height: 330px !important;
+    bottom: 3.2rem !important;
+  }
+
+  #home .animate-marquee {
+    font-size: 0.8rem !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  /* 2. About Section on Mobile */
+  #about {
+    padding-top: 5.5rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #about .max-w-6xl {
+    padding-top: 0 !important;
+  }
+
+  #about .grid {
+    gap: 1.25rem !important;
+  }
+
+  /* 3. Projects Section on Mobile */
+  #projects {
+    padding-top: 5.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  #projects .max-w-7xl {
+    padding-top: 0 !important;
+  }
+
+  /* 4. Contact Section on Mobile */
+  #contact {
+    min-height: 100dvh;
+    height: auto;
+    padding-top: 4.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  #contact .animate-marquee {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  #contact #contactStickersContainer {
+    min-height: 320px !important;
+  }
+
+  /* Responsive scale for interactive contact stickers */
+  .draggable-sticker {
+    transform-origin: center center;
+  }
+}
+
