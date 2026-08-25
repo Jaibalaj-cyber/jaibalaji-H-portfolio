@@ -1,0 +1,189 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[301],{
+7597:function(e,t,r){
+Promise.resolve().then(r.bind(r,641))
+}
+,3897:function(e,t,r){
+"use strict";
+r.d(t,{
+V:function(){
+return d
+}
+
+}
+);
+var n=r(2265),s=r(6498);
+let l="undefined"!=typeof document?n.useLayoutEffect:n.useEffect,a=e=>e&&!Array.isArray(e)&&"object"==typeof e,o=[],i={
+
+}
+,c=s.ZP,d=(e,t=o)=>{
+let r=i;
+a(e)?(r=e,e=null,t="dependencies"in r?r.dependencies:o):a(t)&&(t="dependencies"in(r=t)?r.dependencies:o),e&&"function"!=typeof e&&console.warn("First parameter must be a function or config object");
+let{
+scope:s,revertOnUpdate:d
+}
+=r,u=(0,n.useRef)(!1),x=(0,n.useRef)(c.context(()=>{
+
+}
+,s)),f=(0,n.useRef)(e=>x.current.add(null,e)),h=t&&t.length&&!d;
+return h&&l(()=>(u.current=!0,()=>x.current.revert()),o),l(()=>{
+if(e&&x.current.add(e,s),!h||!u.current)return()=>x.current.revert()
+}
+,t),{
+context:x.current,contextSafe:f.current
+}
+
+}
+;
+d.register=e=>{
+c=e
+}
+,d.headless=!0
+}
+,641:function(e,t,r){
+"use strict";
+r.d(t,{
+default:function(){
+return i
+}
+
+}
+);
+var n=r(7437),s=r(2265),l=r(6498),a=r(3897),o=r(7648);
+function i(){
+let e=(0,s.useRef)(null),t=(0,s.useRef)(null),r=(0,s.useRef)(null),i=(0,s.useRef)(null),c=(0,s.useRef)(null),d=(0,s.useRef)(null),u=(0,s.useRef)(null);
+return(0,a.V)(()=>{
+l.ZP.timeline({
+delay:.2
+}
+).from(t.current,{
+y:-20,opacity:0,duration:.8,ease:"power3.out"
+}
+).from(r.current,{
+y:30,opacity:0,duration:.8,ease:"power3.out"
+}
+,"-=0.4").from(u.current,{
+scale:.95,opacity:0,duration:1,ease:"power3.out"
+}
+,"-=0.6").from([i.current,c.current,d.current],{
+y:30,opacity:0,duration:.8,stagger:.15,ease:"power3.out"
+}
+,"-=0.6")
+}
+,{
+scope:e
+}
+),(0,n.jsxs)("section",{
+id:"about",ref:e,className:"relative w-full min-h-screen bg-white text-[#161616] py-24 px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center z-20 overflow-hidden font-jakarta",children:[(0,n.jsx)("div",{
+ref:t,className:"absolute top-6 left-8 z-20 text-[#F44A22] text-4xl tracking-widest pointer-events-none drop-shadow-md origin-center",style:{
+fontFamily:"'Samarkan', sans-serif"
+}
+,children:"ABOUT"
+}
+),(0,n.jsxs)("div",{
+className:"max-w-6xl w-full mx-auto mt-8 flex flex-col",children:[(0,n.jsxs)("div",{
+ref:r,className:"w-full relative select-none mb-8 md:mb-12 flex flex-col gap-3",children:[(0,n.jsx)("h1",{
+className:"font-oswald font-black text-[10vw] md:text-[11vw] uppercase leading-[0.8] text-[#F44A22] tracking-tighter",children:"NAND"
+}
+),(0,n.jsx)("h1",{
+className:"font-oswald font-black text-[10vw] md:text-[11vw] uppercase leading-[0.8] text-[#F44A22] tracking-tighter",children:"KISHORE"
+}
+)]
+}
+),(0,n.jsxs)("div",{
+className:"grid grid-cols-1 lg:grid-cols-12 gap-6 w-full items-stretch",children:[(0,n.jsxs)("div",{
+className:"lg:col-span-7 flex flex-col gap-6 order-2 lg:order-1",children:[(0,n.jsxs)("div",{
+ref:i,className:"bg-[#161616] text-[#FEF8E8] rounded-3xl p-8 md:p-10 border-4 border-[#161616] flex flex-col justify-between min-h-[320px] shadow-sm",children:[(0,n.jsxs)("div",{
+children:[(0,n.jsx)("h2",{
+className:"font-oswald font-bold text-3xl md:text-4xl tracking-wide uppercase text-white mb-4",children:"CREATIVE CODE & VISUAL DESIGN"
+}
+),(0,n.jsx)("p",{
+className:"font-jakarta font-light text-base md:text-lg leading-relaxed text-[#E4E2E3]/95 max-w-2xl",children:"I believe that design should be both beautiful and functional. I build visual solutions that connect with your audience and inspire action. From web architectures to custom designs, I help communicate your message in a way that resonates with your customers."
+}
+)]
+}
+),(0,n.jsx)("div",{
+className:"text-3xl md:text-4xl transform -rotate-3 select-none text-[#FEF8E8]/90 self-end mt-4 cursor-default",style:{
+fontFamily:"'RonthelBrush', cursive"
+}
+,children:"Nand Kishore"
+}
+)]
+}
+),(0,n.jsxs)("div",{
+className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[(0,n.jsxs)("div",{
+ref:c,className:"bg-[#F44A22] text-[#FEF8E8] rounded-3xl p-8 border-4 border-[#161616] flex flex-col justify-between min-h-[220px] hover:shadow-[0_12px_30px_rgba(244,74,34,0.15)] transition-shadow duration-300",children:[(0,n.jsxs)("div",{
+children:[(0,n.jsx)("h3",{
+className:"font-oswald font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2 text-white",children:"CONNECT & INSPIRE."
+}
+),(0,n.jsx)("span",{
+className:"font-jakarta font-medium text-xs tracking-wider opacity-90 uppercase",children:"BRIDGING ART & TECHNOLOGY"
+}
+)]
+}
+),(0,n.jsxs)("div",{
+className:"flex justify-between items-center mt-4",children:[(0,n.jsx)("span",{
+className:"text-xs uppercase tracking-widest font-mono opacity-80",children:"Get in touch"
+}
+),(0,n.jsx)(o.default,{
+href:"/contact",className:"w-12 h-12 rounded-full bg-[#161616] hover:bg-[#FEF8E8] hover:text-[#161616] text-white flex items-center justify-center border-2 border-[#161616] transition-all duration-300 transform hover:scale-105",children:(0,n.jsx)("svg",{
+className:"w-5 h-5",fill:"none",viewBox:"0 0 24 24",stroke:"currentColor",strokeWidth:"2.5",children:(0,n.jsx)("path",{
+strokeLinecap:"round",strokeLinejoin:"round",d:"M14 5l7 7m0 0l-7 7m7-7H3"
+}
+)
+}
+)
+}
+)]
+}
+)]
+}
+),(0,n.jsxs)("div",{
+ref:d,className:"bg-white text-[#161616] rounded-3xl p-8 border-4 border-[#161616] flex flex-col justify-between min-h-[220px]",children:[(0,n.jsxs)("div",{
+children:[(0,n.jsx)("h3",{
+className:"font-cormorant font-bold text-2xl md:text-3xl italic leading-tight text-[#161616] mb-3",children:"Conversations with design thinking."
+}
+),(0,n.jsx)("p",{
+className:"font-jakarta font-light text-sm text-gray-700 leading-relaxed",children:"Focusing on custom software architectures, high performance frontend rendering, and pixel-perfect design guidelines to create outstanding products."
+}
+)]
+}
+),(0,n.jsx)("div",{
+className:"flex items-center gap-1.5 text-xs font-mono text-[#F44A22] font-semibold mt-4",children:(0,n.jsx)("span",{
+children:"✦ DESIGN TALK "
+}
+)
+}
+)]
+}
+)]
+}
+)]
+}
+),(0,n.jsxs)("div",{
+ref:u,className:"lg:col-span-5 relative w-full h-[450px] md:h-[500px] lg:h-auto rounded-3xl border-4 border-[#161616] overflow-hidden bg-gray-100 group order-1 lg:order-2",children:[(0,n.jsx)("img",{
+src:"/my-image.png",alt:"Nand Kishore Soni",className:"w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out select-none pointer-events-auto"
+}
+),(0,n.jsx)("div",{
+className:"absolute top-6 right-6 bg-[#7B2CBF] text-[#FEF8E8] font-bold text-[10px] md:text-xs uppercase px-4 py-1.5 rounded-full border-2 border-[#161616] select-none shadow-sm z-10",children:"ART SIGNING"
+}
+)]
+}
+)]
+}
+)]
+}
+)]
+}
+)
+}
+
+}
+
+}
+,function(e){
+e.O(0,[922,498,648,971,117,744],function(){
+return e(e.s=7597)
+}
+),_N_E=e.O()
+}
+]);

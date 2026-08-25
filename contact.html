@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Jai Balaji H — Contact</title>
+    <meta name="description" content="Get in touch with Jai Balaji H — UI/UX Designer for new projects, design systems, and product collaborations."/>
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Jai Balaji H — Contact"/>
+    <meta property="og:description" content="Get in touch with Jai Balaji H — UI/UX Designer for new projects, design systems, and product collaborations."/>
+    <meta property="og:image" content="assets/social-preview.png"/>
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Jai Balaji H — Contact"/>
+    <meta name="twitter:description" content="Get in touch with Jai Balaji H — UI/UX Designer for new projects, design systems, and product collaborations."/>
+    <meta name="twitter:image" content="assets/social-preview.png"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#E62727',
+                        'accent-yellow': '#FFDE00',
+                        'bg-dark': '#080808',
+                        'bg-surface': '#121212',
+                        'text-primary': '#F5F5F5',
+                        'text-muted': '#A3A3A3',
+                    },
+                    fontFamily: {
+                        aboreto: ['Aboreto', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+                        cormorant: ['Cormorant Garamond', 'serif'],
+                        samarkan: ['Samarkan', 'sans-serif'],
+                        ronthel: ['RonthelBrush', 'cursive'],
+                        inter: ['Inter', 'sans-serif'],
+                        mono: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- GSAP for Smooth Page Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body class="antialiased bg-[#080808] text-[#F5F5F5]">
+
+    <!-- Main Container -->
+    <main class="relative min-h-screen bg-[#080808] text-[#F5F5F5] py-24 flex flex-col justify-between z-20 overflow-hidden font-jakarta">
+        
+        <!-- Top Left Watermark -->
+        <div class="absolute top-6 left-8 z-20 text-[#E62727] text-3xl md:text-4xl font-bold tracking-[0.2em] pointer-events-none drop-shadow-[0_0_15px_rgba(230,39,39,0.5)] origin-center font-aboreto" style="font-family:'Aboreto', sans-serif">CONTACT</div>
+
+        <!-- Marquee Heading & Metadata Row -->
+        <div class="w-full select-none overflow-hidden pt-14 md:pt-16 pb-3">
+            <div class="animate-marquee font-cormorant text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium uppercase tracking-tight text-[#F5F5F5] flex items-center gap-8 whitespace-nowrap mb-2">
+                <span>CONTACT <span class="text-[#E62727]">✦</span> CONTACT <span class="text-[#FFDE00]">✦</span> CONTACT <span class="text-[#E62727]">✦</span> CONTACT <span class="text-[#FFDE00]">✦</span> CONTACT <span class="text-[#E62727]">✦</span>&nbsp;</span>
+                <span>CONTACT <span class="text-[#E62727]">✦</span> CONTACT <span class="text-[#FFDE00]">✦</span> CONTACT <span class="text-[#E62727]">✦</span> CONTACT <span class="text-[#FFDE00]">✦</span> CONTACT <span class="text-[#E62727]">✦</span>&nbsp;</span>
+            </div>
+            <div class="border-t border-white/10 w-full my-3 md:my-4 px-8"></div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 text-xs md:text-sm font-semibold font-jakarta tracking-wide text-[#A3A3A3] uppercase leading-relaxed">
+                <div class="text-center md:text-left text-[#A3A3A3]">I'm here to help you turn your brief into something brilliant.</div>
+                <div class="text-center text-[#A3A3A3]">Just drop me a line or interact with the stickers.</div>
+                <div class="text-center md:text-right text-[#A3A3A3]">© 2026 Jai Balaji H. All rights reserved</div>
+            </div>
+        </div>
+
+        <!-- Draggable Physics Interactive Stickers Area -->
+        <div class="relative w-full flex-grow min-h-[380px] md:min-h-[480px] overflow-hidden select-none pointer-events-auto px-6" id="contactStickersContainer">
+            
+            <!-- Rock Badge (✌️ Gesture) -->
+            <div class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:8%; top:15%; transform:rotate(8deg);" data-init-rotate="8">
+                <div class="relative w-24 h-24 md:w-32 md:h-32 rounded-full bg-[#121212] border-2 border-[#FFDE00]/50 flex items-center justify-center shadow-lg hover:shadow-[0_0_20px_rgba(255,222,0,0.3)] transition-all duration-300 overflow-hidden">
+                    <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full animate-[spin_30s_linear_infinite]">
+                        <path id="circlePath-badge-rock" d="M 50,50 m -35.5,0 a 35.5,35.5 0 1,1 71,0 a 35.5,35.5 0 1,1 -71,0" fill="none"></path>
+                        <text style="font-size: 8.2px; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; fill: #FFDE00; letter-spacing: 0.14em;"><textPath href="#circlePath-badge-rock" startOffset="0%">DRAG ME ✦ DRAG ME ✦ DRAG ME ✦ </textPath></text>
+                    </svg>
+                    <div class="relative z-10 flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 text-[#F5F5F5]" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-2V6a2 2 0 0 0-4 0v4H9V5a2 2 0 0 0-4 0v6.5a4.5 4.5 0 0 0 9 0V10"></path><path d="M5 11.5V7a2 2 0 0 1 4 0v4.5"></path><path d="M17 11.5v3.5a5 5 0 0 1-10 0v-3.5"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Pill -->
+            <a href="https://wa.me/917695971840?text=Hi%20Jai%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:18%; top:30%; transform:rotate(5deg);" data-init-rotate="5" aria-label="Chat on WhatsApp">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>WHATSAPP ↗</span>
+                </div>
+            </a>
+
+            <!-- X Twitter Pill -->
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:65%; top:15%; transform:rotate(-8deg);" data-init-rotate="-8" aria-label="Visit X profile">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>X (TWITTER) ↗</span>
+                </div>
+            </a>
+
+            <!-- Telegram Pill -->
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:78%; top:50%; transform:rotate(12deg);" data-init-rotate="12" aria-label="Chat on Telegram">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>TELEGRAM ↗</span>
+                </div>
+            </a>
+
+            <!-- Instagram Pill -->
+            <a href="https://www.instagram.com/_bzx.__/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:32%; top:10%; transform:rotate(-12deg);" data-init-rotate="-12" aria-label="Visit Instagram profile">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>INSTAGRAM ↗</span>
+                </div>
+            </a>
+
+            <!-- Red Lips Badge -->
+            <div class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:24%; top:45%; transform:rotate(-8deg);" data-init-rotate="-8">
+                <div class="relative w-24 h-24 md:w-32 md:h-32 rounded-full bg-[#121212] border-2 border-[#E62727]/60 flex items-center justify-center shadow-lg hover:shadow-[0_0_20px_rgba(230,39,39,0.3)] transition-all duration-300 overflow-hidden">
+                    <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full animate-[spin_30s_linear_infinite]">
+                        <path id="circlePath-badge-lips" d="M 50,50 m -35.5,0 a 35.5,35.5 0 1,1 71,0 a 35.5,35.5 0 1,1 -71,0" fill="none"></path>
+                        <text style="font-size: 8.2px; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; fill: #E62727; letter-spacing: 0.14em;"><textPath href="#circlePath-badge-lips" startOffset="0%">DRAG ME ✦ DRAG ME ✦ DRAG ME ✦ </textPath></text>
+                    </svg>
+                    <div class="relative z-10 flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" class="w-9 h-9 md:w-11 md:h-11 text-white" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12c3-2 5-3 9-1 4-2 6-1 9 1" fill="#E62727"></path>
+                            <path d="M3 12c4 3 14 3 18 0" fill="#E62727"></path>
+                            <path d="M10 12v3c0 1.5 1 2 2 2s2-.5 2-2v-3" fill="#FFDE00"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LinkedIn Pill -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:8%; top:65%; transform:rotate(15deg);" data-init-rotate="15" aria-label="Visit LinkedIn profile">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>LINKEDIN ↗</span>
+                </div>
+            </a>
+
+            <!-- Dribbble Pill -->
+            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:42%; top:35%; transform:rotate(-6deg);" data-init-rotate="-6" aria-label="Visit Dribbble profile">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>DRIBBBLE ↗</span>
+                </div>
+            </a>
+
+            <!-- Github Pill -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:46%; top:60%; transform:rotate(-10deg);" data-init-rotate="-10" aria-label="Visit GitHub profile">
+                <div class="flex items-center gap-2 px-5 py-3 rounded-full border border-white/20 font-jakarta font-bold text-xs md:text-sm shadow-md transition-all duration-300 bg-[#121212] text-[#F5F5F5] hover:border-[#FFDE00] hover:text-[#FFDE00] hover:bg-[#1a1a1a]">
+                    <span>GITHUB ↗</span>
+                </div>
+            </a>
+
+            <!-- Red Heart Badge -->
+            <div class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing" style="touch-action:none; left:72%; top:32%; transform:rotate(14deg);" data-init-rotate="14">
+                <div class="relative w-24 h-24 md:w-32 md:h-32 rounded-full bg-[#121212] border-2 border-[#FFDE00]/50 flex items-center justify-center shadow-lg hover:shadow-[0_0_20px_rgba(255,222,0,0.3)] transition-all duration-300 overflow-hidden">
+                    <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full animate-[spin_30s_linear_infinite]">
+                        <path id="circlePath-badge-heart" d="M 50,50 m -35.5,0 a 35.5,35.5 0 1,1 71,0 a 35.5,35.5 0 1,1 -71,0" fill="none"></path>
+                        <text style="font-size: 8.2px; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; fill: #FFDE00; letter-spacing: 0.14em;"><textPath href="#circlePath-badge-heart" startOffset="0%">DRAG ME ✦ DRAG ME ✦ DRAG ME ✦ </textPath></text>
+                    </svg>
+                    <div class="relative z-10 flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 text-[#F5F5F5]" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" fill="#E62727"></path>
+                            <path d="M13 6l-3.5 5.5h3l-2 6 4.5-6.5h-3.5Z" fill="#FFDE00"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Red Send Message Pill Action -->
+            <div onclick="openContactModal()" class="draggable-sticker absolute select-none group cursor-grab active:cursor-grabbing z-50" style="touch-action:none; left:62%; top:68%; transform:rotate(6deg);" data-init-rotate="6" role="button" aria-label="Open Contact Form Modal">
+                <div class="flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-[#E62727] font-jakarta font-bold text-sm md:text-base shadow-xl transition-all duration-300 bg-[#E62727] text-white hover:bg-[#FFDE00] hover:text-[#080808] hover:border-[#FFDE00] shadow-[#E62727]/30 hover:scale-105 active:scale-95">
+                    <span>SEND MESSAGE ✦</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Giant Email Copy Banner -->
+        <div class="w-full flex flex-col items-center justify-center relative mt-auto px-6 py-4">
+            <span class="text-[10px] md:text-xs font-semibold font-jakarta tracking-[0.25em] text-[#A3A3A3] uppercase mb-2">Click To Copy Email</span>
+            <h1 onclick="copyEmail()" class="font-cormorant font-normal text-4xl sm:text-6xl md:text-7xl lg:text-[7.5rem] leading-none text-[#F5F5F5] hover:text-[#FFDE00] active:scale-95 transition-all duration-500 text-center select-none cursor-pointer tracking-tighter w-full max-w-7xl break-all drop-shadow-[0_0_20px_rgba(255,222,0,0.15)]" title="Click to copy email address">
+                jaibalaji0850@gmail.com
+            </h1>
+            <div id="email-toast" class="email-toast" role="status">
+                <svg class="w-4 h-4 text-[#FFDE00]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                <span>Copied to clipboard!</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Floating Glass Nav Bar -->
+    <div class="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+        <div class="relative flex font-semibold overflow-hidden text-[#F5F5F5] cursor-pointer transition-all duration-700 rounded-full p-1.5 hover:p-2 hover:rounded-full" style="box-shadow:0 10px 30px rgba(0, 0, 0, 0.6), 0 2px 12px rgba(230, 39, 39, 0.2);border:1px solid rgba(245, 245, 245, 0.12);transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 2.2)">
+            <div class="absolute inset-0 z-0 overflow-hidden rounded-inherit rounded-3xl" style="backdrop-filter:blur(24px) saturate(190%);-webkit-backdrop-filter:blur(24px) saturate(190%);isolation:isolate"></div>
+            <div class="absolute inset-0 z-10 rounded-inherit" style="background:rgba(18, 18, 18, 0.88)"></div>
+            <div class="absolute inset-0 z-20 rounded-inherit rounded-3xl overflow-hidden pointer-events-none" style="box-shadow:inset 1px 1px 1px 0 rgba(255, 255, 255, 0.15), inset -1px -1px 1px 1px rgba(0, 0, 0, 0.6)"></div>
+            <div class="relative z-30">
+                <div class="flex items-center justify-center gap-2 rounded-full p-1 overflow-hidden">
+                    <a class="flex items-center px-4 py-2 rounded-full transition-all duration-500 hover:scale-105 cursor-pointer group text-[#F5F5F5] hover:text-[#FFDE00] hover:bg-white/10" style="transform-origin:center center;transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 2.2)" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house" aria-hidden="true">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                            <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span class="ml-2 text-sm font-medium tracking-wide">Home</span>
+                    </a>
+                    <a class="flex items-center px-4 py-2 rounded-full transition-all duration-500 hover:scale-105 cursor-pointer group text-[#F5F5F5] hover:text-[#FFDE00] hover:bg-white/10" style="transform-origin:center center;transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 2.2)" href="about.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span class="ml-2 text-sm font-medium tracking-wide">About</span>
+                    </a>
+                    <a class="flex items-center px-4 py-2 rounded-full transition-all duration-500 hover:scale-105 cursor-pointer group text-[#F5F5F5] hover:text-[#FFDE00] hover:bg-white/10" style="transform-origin:center center;transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 2.2)" href="projects.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" aria-hidden="true">
+                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                        </svg>
+                        <span class="ml-2 text-sm font-medium tracking-wide">Projects</span>
+                    </a>
+                    <a class="flex items-center px-4 py-2 rounded-full transition-all duration-500 hover:scale-105 cursor-pointer group bg-[#E62727] text-white" style="transform-origin:center center;transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 2.2)" href="contact.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        </svg>
+                        <span class="ml-2 text-sm font-medium tracking-wide">Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Contact Modal -->
+    <div id="contact-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeContactModal()" aria-label="Close Contact Modal">✕</button>
+            <div class="text-xs font-bold tracking-widest text-[#FFDE00] uppercase font-jakarta flex items-center gap-1.5 mb-1">
+                <span>✦ DIRECT LINE</span>
+            </div>
+            <h2 id="modal-title" class="font-oswald text-3xl font-bold uppercase text-[#F5F5F5] mb-2 tracking-tight">Drop A Message</h2>
+            <p class="text-xs text-[#A3A3A3] mb-5 font-jakarta">Fill out the form below and I'll get back to you shortly.</p>
+            
+            <!-- Real Status Feedback Box -->
+            <div id="contact-status" class="hidden mb-4 text-xs font-bold py-2.5 px-3.5 rounded-xl text-center font-jakarta transition-all duration-300" role="status" aria-live="polite"></div>
+
+            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="flex flex-col gap-4 font-jakarta">
+                <div>
+                    <label for="contact-name" class="block text-[11px] font-bold uppercase text-[#A3A3A3] mb-1">Your Name</label>
+                    <input type="text" id="contact-name" name="name" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-white/15 focus:border-[#FFDE00] outline-none text-sm bg-[#1a1a1a] text-[#F5F5F5] placeholder-[#A3A3A3]/50 transition-colors">
+                </div>
+                <div>
+                    <label for="contact-email" class="block text-[11px] font-bold uppercase text-[#A3A3A3] mb-1">Email Address</label>
+                    <input type="email" id="contact-email" name="email" required placeholder="you@domain.com" class="w-full px-4 py-3 rounded-xl border border-white/15 focus:border-[#FFDE00] outline-none text-sm bg-[#1a1a1a] text-[#F5F5F5] placeholder-[#A3A3A3]/50 transition-colors">
+                </div>
+                <div>
+                    <label for="contact-message" class="block text-[11px] font-bold uppercase text-[#A3A3A3] mb-1">Message</label>
+                    <textarea rows="3" id="contact-message" name="message" required placeholder="Tell me about your project..." class="w-full px-4 py-3 rounded-xl border border-white/15 focus:border-[#FFDE00] outline-none text-sm bg-[#1a1a1a] text-[#F5F5F5] placeholder-[#A3A3A3]/50 resize-none transition-colors"></textarea>
+                </div>
+                <button type="submit" id="contact-submit-btn" class="w-full py-3.5 bg-[#E62727] text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-[#FFDE00] hover:text-[#080808] transition-all shadow-lg shadow-[#E62727]/30 mt-2 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                    <span>SEND INQUIRY ✦</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

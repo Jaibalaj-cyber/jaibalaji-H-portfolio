@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment Variables & Private Secrets
+.env
+.env.local
+.env.*.local
+
+# Private Contact Storage
+data/
+
+# Logs & Temp
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
