@@ -43,7 +43,6 @@
                         oswald: ['Oswald', 'sans-serif'],
                         jakarta: ['Plus Jakarta Sans', 'sans-serif'],
                         cormorant: ['Cormorant Garamond', 'serif'],
-                        samarkan: ['Samarkan', 'sans-serif'],
                         ronthel: ['RonthelBrush', 'cursive'],
                         inter: ['Inter', 'sans-serif'],
                         mono: ['Inter', 'sans-serif'],
@@ -58,22 +57,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"/>
     <link rel="preload" href="assets/ronthel_brush.otf" as="font" type="font/otf" crossorigin=""/>
-    <link rel="preload" href="assets/samarkan.ttf" as="font" type="font/ttf" crossorigin=""/>
     <style>
 /* ========================================================
-   NAND KISHORE SONI — PORTFOLIO STYLESHEET
+   JAI BALAJI H — PORTFOLIO STYLESHEET
    10/10 MASTER LEVEL: RED (#E62727) + YELLOW (#FFDE00) + OBSIDIAN (#080808)
    ======================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Oswald:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-@font-face {
-  font-family: 'Samarkan';
-  src: url('assets/samarkan.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Oswald:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @font-face {
   font-family: 'RonthelBrush';
@@ -129,11 +119,6 @@ body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   overflow-x: hidden;
   min-height: 100vh;
-  cursor: url('assets/cursor.svg'), auto;
-}
-
-a, button, [role="button"] {
-  cursor: url('assets/cursor_pointer.svg'), pointer;
 }
 
 /* Accessibility Focus States */
@@ -146,7 +131,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .font-aboreto { font-family: 'Aboreto', sans-serif; }
 .font-inter { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
 .font-mono { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important; }
-.font-samarkan { font-family: 'Samarkan', sans-serif; }
 .font-ronthel { font-family: 'RonthelBrush', cursive; }
 .font-oswald { font-family: 'Oswald', sans-serif; }
 .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -723,7 +707,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
                 <!-- Left Brand Watermark -->
                 <div class="pointer-events-auto origin-left pt-2">
                     <div class="flex items-center gap-3">
-                        <svg class="w-9 h-9 text-[#E62727] drop-shadow-[0_0_15px_rgba(230,39,39,0.6)] animate-pulse" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="w-8 h-8 md:w-9 md:h-9 text-[#E62727]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M12 0L15.3 8.7L24 12L15.3 15.3L12 24L8.7 15.3L0 12L8.7 8.7Z"></path>
                         </svg>
                         <span class="text-xl md:text-2xl tracking-[0.22em] text-[#E62727] uppercase leading-none font-aboreto" style="font-family:'Aboreto', sans-serif">PORTFOLIO</span>
@@ -920,18 +904,56 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
                         </div>
                     </a>
 
-                    <!-- Project 02: Traveling Case Study -->
+                    <!-- Project 02: Traveling Case Study (Brand-Aligned UI Mockup Preview) -->
                     <div class="project-card-container group block select-none">
-                        <div class="card-clip-2 w-full aspect-[4/3] bg-[#1a1a1a] relative overflow-hidden rounded-2xl flex items-center justify-center mb-4">
-                            <div class="absolute w-[95%] h-[65%] -top-[25%] left-[2.5%] rounded-full blur-[40px] opacity-80 pointer-events-none animate-float-fast-top" style="background-color:#ffffff"></div>
-                            <div class="absolute w-[85%] h-[85%] top-[10%] -left-[10%] rounded-full blur-[35px] opacity-75 pointer-events-none animate-float-medium-mid" style="background-color:#00F2FE"></div>
-                            <div class="absolute w-[85%] h-[85%] top-[15%] -right-[10%] rounded-full blur-[35px] opacity-75 pointer-events-none animate-float-medium-mid-delayed" style="background-color:#4FACFE"></div>
-                            <div class="absolute w-[100%] h-[60%] -bottom-[25%] left-0 rounded-full blur-[30px] opacity-90 pointer-events-none animate-float-slow-bottom" style="background-color:#080808"></div>
-                            <div class="absolute inset-0 opacity-[0.22] pointer-events-none mix-blend-overlay z-10 noise-bg"></div>
-                            <span class="relative z-20 text-[#F5F5F5] font-cormorant font-bold text-5xl opacity-60 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">02</span>
+                        <div class="card-clip-2 w-full aspect-[4/3] bg-[#121212] relative overflow-hidden rounded-2xl flex flex-col justify-between p-5 mb-4 border border-white/10 group-hover:border-[#E62727]/40 transition-colors">
                             
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#080808]/85 backdrop-blur-md border border-[#FFDE00] px-4 py-2 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-xl z-30">
-                                <span class="text-xs font-bold text-[#FFDE00] uppercase font-jakarta tracking-wider">CASE STUDY</span>
+                            <!-- Sleek UI Mockup Header -->
+                            <div class="flex items-center justify-between z-10">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#E62727]"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#FFDE00]"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                </div>
+                                <span class="text-[10px] font-mono font-bold tracking-widest text-[#A3A3A3] uppercase">TRAVELING UI APP</span>
+                            </div>
+
+                            <!-- Interactive Mockup Canvas Content -->
+                            <div class="relative z-10 flex flex-col gap-2.5 my-auto">
+                                <div class="bg-[#1a1a1a] rounded-xl p-3 border border-white/10 shadow-inner flex items-center justify-between">
+                                    <div class="flex items-center gap-2.5">
+                                        <div class="w-8 h-8 rounded-lg bg-[#E62727]/20 border border-[#E62727]/50 flex items-center justify-center text-[#FFDE00] text-xs font-bold">✈</div>
+                                        <div>
+                                            <div class="text-[11px] font-bold text-[#F5F5F5] font-jakarta">KYOTO ➔ TOKYO</div>
+                                            <div class="text-[9px] text-[#A3A3A3]">Curated 4-Day Itinerary</div>
+                                        </div>
+                                    </div>
+                                    <span class="text-[9px] font-bold px-2 py-0.5 rounded-full bg-[#FFDE00]/15 text-[#FFDE00] border border-[#FFDE00]/30">ACTIVE</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="bg-[#1a1a1a]/80 rounded-lg p-2 border border-white/5 text-[9px] text-[#A3A3A3] flex items-center justify-between">
+                                        <span>4.9 ★ RATING</span>
+                                        <span class="text-white font-bold">FIGMA</span>
+                                    </div>
+                                    <div class="bg-[#1a1a1a]/80 rounded-lg p-2 border border-white/5 text-[9px] text-[#A3A3A3] flex items-center justify-between">
+                                        <span>12 SCREENS</span>
+                                        <span class="text-[#E62727] font-bold">iOS UI</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-[9px] text-[#A3A3A3] font-mono z-10 pt-2 border-t border-white/5">
+                                <span>UX RESEARCH &amp; DESIGN SYSTEM</span>
+                                <span class="text-[#FFDE00]">CASE STUDY PREVIEW</span>
+                            </div>
+
+                            <!-- Subtle Noise overlay -->
+                            <div class="absolute inset-0 opacity-[0.15] pointer-events-none noise-bg"></div>
+                            
+                            <!-- Centered Hover Badge -->
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#080808]/90 backdrop-blur-md border border-[#FFDE00] px-4 py-2 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-xl z-30">
+                                <span class="text-xs font-bold text-[#FFDE00] uppercase font-jakarta tracking-wider">CASE STUDY PREVIEW</span>
                                 <svg class="w-4 h-4 text-[#FFDE00]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
                             </div>
                         </div>
@@ -949,16 +971,53 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
                         </div>
                     </div>
 
-                    <!-- Project 03: Balance (Coming Soon) -->
+                    <!-- Project 03: Balance (Brand-Aligned Design System Preview) -->
                     <div class="project-card-container group block select-none">
-                        <div class="card-clip-3 w-full aspect-[4/3] bg-[#1a1a1a] relative overflow-hidden rounded-2xl flex items-center justify-center mb-4">
-                            <div class="absolute w-[95%] h-[65%] -top-[25%] left-[2.5%] rounded-full blur-[40px] opacity-80 pointer-events-none animate-float-fast-top" style="background-color:#ffffff"></div>
-                            <div class="absolute w-[85%] h-[85%] top-[10%] -left-[10%] rounded-full blur-[35px] opacity-75 pointer-events-none animate-float-medium-mid" style="background-color:#9B51E0"></div>
-                            <div class="absolute w-[85%] h-[85%] top-[15%] -right-[10%] rounded-full blur-[35px] opacity-75 pointer-events-none animate-float-medium-mid-delayed" style="background-color:#E62727"></div>
-                            <div class="absolute w-[100%] h-[60%] -bottom-[25%] left-0 rounded-full blur-[30px] opacity-90 pointer-events-none animate-float-slow-bottom" style="background-color:#080808"></div>
-                            <div class="absolute inset-0 opacity-[0.22] pointer-events-none mix-blend-overlay z-10 noise-bg"></div>
-                            <span class="relative z-20 text-[#F5F5F5] font-cormorant font-bold text-5xl opacity-60 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">03</span>
+                        <div class="card-clip-3 w-full aspect-[4/3] bg-[#121212] relative overflow-hidden rounded-2xl flex flex-col justify-between p-5 mb-4 border border-white/10 group-hover:border-[#FFDE00]/40 transition-colors">
                             
+                            <!-- Sleek UI Mockup Header -->
+                            <div class="flex items-center justify-between z-10">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#E62727]"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-[#FFDE00]"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                </div>
+                                <span class="text-[10px] font-mono font-bold tracking-widest text-[#FFDE00] uppercase">WELLNESS &amp; HABITS</span>
+                            </div>
+
+                            <!-- Interactive Mockup Content -->
+                            <div class="relative z-10 flex flex-col gap-2.5 my-auto">
+                                <div class="bg-[#1a1a1a] rounded-xl p-3 border border-white/10 shadow-inner flex items-center justify-between">
+                                    <div>
+                                        <div class="text-[11px] font-bold text-[#F5F5F5] font-jakarta">DAILY BALANCE SCORE</div>
+                                        <div class="text-[9px] text-[#A3A3A3]">Mindfulness &amp; Routine Tracking</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs font-black font-oswald text-[#FFDE00]">88%</div>
+                                        <div class="text-[8px] font-bold text-[#E62727]">STREAK 14D</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between gap-1.5 h-6 px-1">
+                                    <div class="flex-1 bg-white/10 rounded h-full"></div>
+                                    <div class="flex-1 bg-[#E62727]/60 rounded h-3/4"></div>
+                                    <div class="flex-1 bg-[#FFDE00]/70 rounded h-full"></div>
+                                    <div class="flex-1 bg-white/15 rounded h-1/2"></div>
+                                    <div class="flex-1 bg-[#E62727] rounded h-full"></div>
+                                    <div class="flex-1 bg-[#FFDE00] rounded h-5/6"></div>
+                                    <div class="flex-1 bg-white/20 rounded h-2/3"></div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-[9px] text-[#A3A3A3] font-mono z-10 pt-2 border-t border-white/5">
+                                <span>DESIGN SYSTEM V1.0</span>
+                                <span class="text-[#E62727]">IN ACTIVE DEVELOPMENT</span>
+                            </div>
+
+                            <!-- Subtle Noise overlay -->
+                            <div class="absolute inset-0 opacity-[0.15] pointer-events-none noise-bg"></div>
+                            
+                            <!-- Centered Hover Badge -->
                             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#080808]/85 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-xl z-30">
                                 <span class="text-xs font-bold text-[#A3A3A3] uppercase font-jakarta tracking-wider">IN PROGRESS</span>
                             </div>
@@ -968,10 +1027,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
                             <span class="text-[10px] font-inter font-semibold text-[#A3A3A3] uppercase">IN PROGRESS</span>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold uppercase text-[#F5F5F5] group-hover:text-[#FFDE00] transition-colors mb-1.5">BALANCE</h3>
-                        <p class="text-xs text-[#A3A3A3] leading-relaxed mb-4">A new design project is currently in progress.</p>
+                        <p class="text-xs text-[#A3A3A3] leading-relaxed mb-4">A holistic wellness and habit tracking application designed with minimalist interactions and real-time biometric visualization.</p>
                         <div class="flex flex-wrap gap-1.5">
                             <span class="project-tech-pill">Figma</span>
                             <span class="project-tech-pill">Concept Design</span>
+                            <span class="project-tech-pill">Design Tokens</span>
                         </div>
                     </div>
 
