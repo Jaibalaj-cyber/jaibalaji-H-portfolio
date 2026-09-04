@@ -555,6 +555,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   /* Responsive scale for interactive contact stickers */
   .draggable-sticker {
     transform-origin: center center;
+    max-width: calc(100vw - 32px);
   }
 }
 

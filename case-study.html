@@ -330,7 +330,7 @@
 
         <!-- Image Container with Zoom & Drag Support -->
         <div id="lightboxImgWrapper" class="relative max-w-full max-h-full flex items-center justify-center overflow-auto p-4 transition-transform duration-200 ease-out" style="transform: scale(1);">
-            <img id="lightboxImg" src="" alt="Case Study Zoom Preview" class="max-w-[94vw] max-h-[86vh] object-contain rounded-lg shadow-2xl border border-white/10"/>
+            <img id="lightboxImg" alt="Case Study Zoom Preview" class="max-w-[94vw] max-h-[86vh] object-contain rounded-lg shadow-2xl border border-white/10"/>
         </div>
 
         <!-- Bottom Keyboard Hint -->
@@ -387,6 +387,8 @@
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
             resetZoom();
+            const img = document.getElementById('lightboxImg');
+            if (img) img.removeAttribute('src');
         }
 
         function updateLightboxContent() {

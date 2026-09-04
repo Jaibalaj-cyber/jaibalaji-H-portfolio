@@ -421,6 +421,32 @@ function initDraggableStickers() {
 
   const stickers = document.querySelectorAll('.draggable-sticker');
 
+  // Boundary clamp helper to guarantee stickers remain completely inside container
+  function clampStickerPosition(sticker) {
+    const parentRect = container.getBoundingClientRect();
+    if (parentRect.width === 0) return;
+    const maxLeft = Math.max(0, parentRect.width - sticker.offsetWidth - 8);
+    const maxTop = Math.max(0, parentRect.height - sticker.offsetHeight - 8);
+    const currentLeft = sticker.offsetLeft;
+    const currentTop = sticker.offsetTop;
+    if (currentLeft > maxLeft) {
+      sticker.style.left = `${Math.max(8, maxLeft)}px`;
+    }
+    if (currentTop > maxTop) {
+      sticker.style.top = `${Math.max(8, maxTop)}px`;
+    }
+  }
+
+  stickers.forEach(sticker => {
+    clampStickerPosition(sticker);
+  });
+
+  window.addEventListener('resize', () => {
+    stickers.forEach(sticker => {
+      clampStickerPosition(sticker);
+    });
+  });
+
   stickers.forEach(sticker => {
     const isCta = sticker.getAttribute('data-is-cta') === 'true' || sticker.id === 'cta-send-message';
     let isDragging = false;
